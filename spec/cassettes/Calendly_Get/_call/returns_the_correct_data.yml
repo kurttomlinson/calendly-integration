@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://calendly.com/api/v1/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Token:
+      - AICDPPONNEXAA52LQHQPV3UPZM7DPKR4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Apr 2019 02:03:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d36a23af6b98c1f8de5c2c8a63db9164d1555034617; expires=Sat, 11-Apr-20
+        02:03:37 GMT; path=/; domain=.calendly.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+      Access-Control-Allow-Headers:
+      - "*,x-requested-with,Content-Type,Accept,If-Modified-Since,If-None-Match,X-Token,Authorization"
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - W/"672e80396769e37c3191b2ef01799c00"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1ea6ad46-aca1-4f82-8fb2-3ab85754df5e
+      X-Runtime:
+      - '0.020620'
+      Strict-Transport-Security:
+      - max-age=31556952; includeSubDomains; preload
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c619ff86a91b9e2-ATL
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"users","id":"FGDECQJRUU6XWVA6","attributes":{"slug":"kurttomlinson","name":"Kurt
+        Tomlinson","email":"kurttomlinson@gmail.com","url":"https:\/\/calendly.com\/kurttomlinson","timezone":"America\/New_York","avatar":{"url":null},"created_at":"2019-04-08T21:13:43Z","updated_at":"2019-04-08T21:14:20Z"}}}'
+    http_version: 
+  recorded_at: Fri, 12 Apr 2019 02:03:37 GMT
+recorded_with: VCR 4.0.0
