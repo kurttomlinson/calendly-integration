@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   namespace :calendly do
     post :invitee_created
   end
+
+  resources :meetings, only: [:index]
 end

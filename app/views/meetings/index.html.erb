@@ -1,0 +1,13 @@
+<% if @meetings.length == 0 %>
+  No meetings have been scheduled.
+<% end %>
+
+<% @meetings.each do |meeting| %>
+  <p>
+    Invitee name: <%= meeting.invitee_name %><br/>
+    Event start time: <%= meeting.event_start_time %><br/>
+    Event end time: <%= meeting.event_end_time %><br/>
+    Event type name: <%= meeting.event_type_name %><br/>
+    Event created at: <%= meeting.event_created_at %>
+  </p>
+<% end %>
